@@ -25,9 +25,6 @@ const Footer = () => {
             </Link>
 
             <nav className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-semibold tracking-wide">
-              <Link to="/article/itch-relief-dogs-2025" className="text-white/95 hover:text-white transition-colors">
-                ITCH RELIEF 2025
-              </Link>
               <Link to="/disclaimer" className="text-white/95 hover:text-white transition-colors">
                 ADVERTISING &amp; MEDICAL DISCLAIMER
               </Link>
