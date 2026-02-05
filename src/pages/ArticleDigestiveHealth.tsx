@@ -10,10 +10,10 @@ const ArticleDigestiveHealth = () => {
     <div className="article-page min-h-screen bg-[#EDF5FF]">
       <Header />
 
-      <article className="pt-24 pb-10">
+      <article className="pt-24 pb-10 flex flex-col items-center">
         {/* Top section – above image */}
-        <div className="bg-[#EDF5FF]">
-          <div className="container mx-auto px-6 max-w-3xl py-10 md:py-12">
+        <div className="w-full bg-[#EDF5FF] flex justify-center">
+          <div className="w-full max-w-3xl mx-auto px-6 py-10 md:py-12">
             <h1 className="font-display text-[1.75rem] md:text-[2.5rem] font-bold text-black leading-tight mb-6 text-center">
               How to Improve Digestive Health &amp; Immunity in Dogs
             </h1>
@@ -24,8 +24,8 @@ const ArticleDigestiveHealth = () => {
         </div>
 
         {/* Bottom section – white background from image down */}
-        <div className="bg-[#EDF5FF] px-4 pb-6">
-          <div className="container mx-auto max-w-3xl border border-white bg-[#FFFFFF] shadow-sm">
+        <div className="w-full bg-[#EDF5FF] px-4 pb-6 flex justify-center">
+          <div className="w-full max-w-3xl mx-auto border border-white bg-[#FFFFFF] shadow-sm">
             <div className="px-4 md:px-6 py-4 md:py-6">
               <div className="w-full mx-auto mb-6">
                 <img

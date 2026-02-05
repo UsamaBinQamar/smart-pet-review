@@ -8,17 +8,18 @@ const PrivacyPolicy = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#f5f6f8]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+    <div className="min-h-screen bg-[#e8eef5]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
       <Header />
 
       <main className="pt-24 pb-16">
-        <div className="container mx-auto px-5 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-8 md:p-12 shadow-sm">
-              <h1 className="text-3xl md:text-4xl font-bold text-black mb-8" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+        <div className="container mx-auto px-5 md:px-6 flex flex-col items-center">
+          <div className="w-full max-w-4xl flex flex-col items-center">
+            <div className="w-full bg-[#e6f0fa] rounded-xl py-8 md:py-10 px-6 md:px-8 text-center mb-8">
+              <h1 className="text-3xl md:text-4xl font-bold text-[#222]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                 Privacy Policy
               </h1>
-
+            </div>
+            <div className="w-full bg-white rounded-xl p-8 md:p-12 shadow-md text-left">
               <div className="space-y-8 text-base md:text-lg leading-relaxed text-[#222]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                 <div>
                   <p className="mb-4">

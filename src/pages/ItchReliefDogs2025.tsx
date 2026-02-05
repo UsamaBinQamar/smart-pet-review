@@ -111,10 +111,10 @@ const ItchReliefDogs2025 = () => {
       )}
 
       {/* Hero Section */}
-      <section className="hero pt-12 md:pt-24 pb-6 md:pb-16 px-4 md:px-8" style={{ background: '#EDF5FF', textAlign: 'center' }}>
-        <div className="wrapper container mx-auto px-4 md:px-6 max-w-5xl">
+      <section className="hero pt-12 md:pt-24 pb-6 md:pb-16 px-4 md:px-8 flex flex-col items-center" style={{ background: '#EDF5FF', textAlign: 'center' }}>
+        <div className="w-full max-w-5xl mx-auto px-4 md:px-6">
           {/* Main Title */}
-          <h1 className="text-[28px] md:text-5xl lg:text-6xl font-bold leading-tight mb-3 md:mb-6" style={{ color: "#0b1324", fontFamily: 'Satoshi, sans-serif' }}>
+          <h1 className="text-[28px] md:text-5xl lg:text-6xl font-bold leading-tight mb-3 md:mb-6" style={{ color: "#0b1324", fontFamily: 'Satoshi, sans-serif', fontWeight: 800 }}>
             The Best 5 Itch-Relief<br />
             For Dogs in 2025
           </h1>
@@ -172,9 +172,8 @@ const ItchReliefDogs2025 = () => {
         </div>
       </section>
 
-      <article className="pt-8 pb-16">
-        <div className="container mx-auto px-5 md:px-6">
-
+      <article className="pt-8 pb-16 flex flex-col items-center">
+        <div className="w-full max-w-5xl mx-auto px-5 md:px-6">
           <div className="bg-white rounded-xl p-6 md:p-8 space-y-8 text-[#222]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
             <p className="text-sm text-[#666]">Updated on 02/02/2026</p>
 
@@ -367,8 +366,8 @@ const ItchReliefDogs2025 = () => {
 
 
           {/* Section: Top 5 Dog Skin & Coat Supplements */}
-          <section id="top5" className="mt-12">
-            <div className="container mx-auto px-5 md:px-6">
+          <section id="top5" className="mt-12 w-full">
+            <div className="w-full px-5 md:px-6">
               <p className="text-sm md:text-base font-semibold uppercase tracking-wide text-[#666] text-center mb-2" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                 Top 5
               </p>

@@ -10,10 +10,10 @@ const ArticleHealthyEyes = () => {
     <div className="article-page min-h-screen bg-[#EDF5FF]">
       <Header />
 
-      <article className="pt-24 pb-16">
+      <article className="pt-24 pb-16 flex flex-col items-center">
         {/* Above image – #EDF5FF */}
-        <div className="bg-[#EDF5FF]">
-          <div className="container mx-auto px-6 max-w-3xl py-10 md:py-12">
+        <div className="w-full bg-[#EDF5FF] flex justify-center">
+          <div className="w-full max-w-3xl mx-auto px-6 py-10 md:py-12">
             <h1 className="text-2xl md:text-4xl font-bold text-black leading-tight mb-6 text-center">
               Your Dog Needs Healthy Eyes and Clear Vision
             </h1>
@@ -24,8 +24,8 @@ const ArticleHealthyEyes = () => {
         </div>
 
         {/* From image – #FFFFFF */}
-        <div className="bg-[#FFFFFF]">
-          <div className="container mx-auto px-6 max-w-3xl py-6 md:py-10">
+        <div className="w-full bg-[#FFFFFF] flex justify-center">
+          <div className="w-full max-w-3xl mx-auto px-6 py-6 md:py-10">
             <div className="w-full mx-auto mb-10">
               <img
                 src="/article-healthy-eyes.png"
