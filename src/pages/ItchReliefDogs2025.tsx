@@ -371,7 +371,7 @@ const ItchReliefDogs2025 = () => {
 
           {/* Section: Top 5 Dog Skin & Coat Supplements */}
           <section id="top5" className="mt-12 w-full">
-            <div className="w-full px-5 md:px-6">
+            <div className="w-full px-3 md:px-6 lg:px-8">
               <p className="text-sm md:text-base font-semibold uppercase tracking-wide text-[#666] text-center mb-2" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                 Top 5
               </p>
@@ -385,16 +385,16 @@ const ItchReliefDogs2025 = () => {
               </div>
 
               {/* Product Card: Pawfy */}
-              <div className="bg-white rounded-xl border-2 border-[#5FCE92] p-6 md:p-8 mb-8 shadow-sm">
+              <div className="bg-white rounded-xl border-2 border-[#5FCE92] p-6 md:p-10 mb-8 shadow-sm">
                 {/* Product Title */}
                 <div className="text-center mb-6 md:mb-8">
-                  <h3 className="text-3xl md:text-4xl font-bold text-black mb-2" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                  <h3 className="text-4xl md:text-5xl font-extrabold text-black mb-2" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                     Skin &amp; Coat <span className="text-[#316DFF] text-base align-super">[ 1 ]</span>
                   </h3>
-                  <p className="text-lg text-[#316DFF] font-semibold" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                  <p className="text-xl text-[#316DFF] font-bold" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                     by Pawfy
                   </p>
-                  <p className="text-sm text-[#666] mt-1" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                  <p className="text-base text-[#666] font-semibold mt-1" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                     Sponsored — This is a sponsored recommendation by our affiliated partner.
                   </p>
                 </div>

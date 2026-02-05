@@ -1,6 +1,25 @@
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Close menu on route change
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
+  const navItems = [
+    { label: "About Us", to: "/about" },
+    { label: "Dog Nutrition", to: "/article/supplements-help-your-dog" },
+    { label: "Allergies", to: "/article/itch-relief-dogs-2025" },
+    { label: "Digestive Health", to: "/article/digestive-health-immunity" },
+    { label: "Joint Health", to: "/article/joint-health-mobility" },
+    { label: "Pain Relief", to: "/article/separation-anxiety" },
+  ];
+
   return (
     <motion.header
       initial={{ y: -20, opacity: 0 }}
@@ -14,8 +33,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-5 md:px-6 h-24">
         <div className="flex h-full items-center justify-between gap-4">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-flex items-center no-underline outline-none focus-visible:ring-2 focus-visible:ring-sky-200/70 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent rounded-xl"
             aria-label="Smart Pet Reviews home"
           >
@@ -24,12 +43,26 @@ const Header = () => {
               alt="Smart Pet Reviews"
               className="h-12 w-auto md:h-[38px]"
             />
-          </a>
+          </Link>
+
+          {/* Desktop navigation */}
+          <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-white/90">
+            {navItems.map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="hover:text-white transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
 
           <button
             type="button"
-            className="grid size-14 shrink-0 place-items-center rounded-xl bg-transparent text-white/90 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/55 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
+            className="grid size-14 shrink-0 place-items-center rounded-xl bg-transparent text-white/90 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/55 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent md:hidden"
             aria-label="Open menu"
+            onClick={() => setIsMenuOpen(true)}
           >
             <img
               src="/imgi_2_hamburger.svg"
@@ -40,6 +73,61 @@ const Header = () => {
           </button>
         </div>
       </div>
+
+      {/* Mobile navigation sidebar */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 md:hidden">
+          {/* Backdrop */}
+          <button
+            className="absolute inset-0 w-full h-full bg-black/40"
+            aria-label="Close menu"
+            onClick={() => setIsMenuOpen(false)}
+          />
+
+          {/* Sidebar panel */}
+          <nav className="absolute top-0 right-0 h-full w-72 max-w-full bg-[#316DFF] text-white shadow-xl flex flex-col pt-24 pb-10 px-6 space-y-6">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-base font-semibold tracking-wide uppercase text-white/80">
+                Menu
+              </span>
+              <button
+                type="button"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                aria-label="Close menu"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <span className="sr-only">Close</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <ul className="space-y-4 text-left">
+              {navItems.map((item) => (
+                <li key={item.to}>
+                  <Link
+                    to={item.to}
+                    className="block text-lg font-semibold tracking-wide hover:text-white/80 focus-visible:outline-none"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      )}
     </motion.header>
   );
 };
