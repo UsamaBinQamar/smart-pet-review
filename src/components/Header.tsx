@@ -45,22 +45,9 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-white/90">
-            {navItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                className="hover:text-white transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-
           <button
             type="button"
-            className="grid size-14 shrink-0 place-items-center rounded-xl bg-transparent text-white/90 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/55 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent md:hidden"
+            className="grid size-14 shrink-0 place-items-center rounded-xl bg-transparent text-white/90 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/55 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
             aria-label="Open menu"
             onClick={() => setIsMenuOpen(true)}
           >
@@ -74,9 +61,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile navigation sidebar */}
+      {/* Navigation sidebar (used for both mobile and desktop via hamburger) */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
+        <div className="fixed inset-0 z-50">
           {/* Backdrop */}
           <button
             className="absolute inset-0 w-full h-full bg-black/40"
