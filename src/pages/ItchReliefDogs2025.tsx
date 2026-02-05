@@ -113,6 +113,10 @@ const ItchReliefDogs2025 = () => {
       {/* Hero Section */}
       <section className="hero pt-12 md:pt-24 pb-6 md:pb-16 px-4 md:px-8 flex flex-col items-center" style={{ background: '#EDF5FF', textAlign: 'center' }}>
         <div className="w-full max-w-5xl mx-auto px-4 md:px-6">
+          {/* Sponsored disclaimer above title */}
+          <p className="text-xs md:text-sm font-bold uppercase tracking-[1.2px] text-[#1e2a3b] mb-4 md:mb-5" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+            Sponsored Advertising Content
+          </p>
           {/* Main Title */}
           <h1 className="text-[28px] md:text-5xl lg:text-6xl font-bold leading-tight mb-3 md:mb-6" style={{ color: "#0b1324", fontFamily: 'Satoshi, sans-serif', fontWeight: 800 }}>
             The Best 5 Itch-Relief<br />
@@ -161,12 +165,12 @@ const ItchReliefDogs2025 = () => {
           {/* Advertising Disclaimer */}
           <div className="rounded-lg border border-[#8FA3BF] overflow-hidden max-w-md md:max-w-3xl mx-auto text-center bg-white" style={{ fontFamily: 'Satoshi, sans-serif' }}>
             <div className="bg-[#EAF2FF] py-2 px-4">
-              <span className="font-bold uppercase text-[12px] md:text-sm text-[#1F2A3A] tracking-wide" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+              <span className="font-extrabold uppercase text-[13px] md:text-base text-[#0b1324] tracking-wide" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 800 }}>
                 ADVERTISING DISCLAIMER
               </span>
             </div>
-            <div className="py-3 px-4 text-[12px] md:text-sm text-[#333] leading-relaxed">
-              This is a subjective round-up and it is not exhaustive of all products on the market. We may receive referral fees and we are affiliated with some brands we mention, such as Pawfy. For more information, see <a href="#" onClick={openDisclosure} className="disclosure-popup underline cursor-pointer text-[#316DFF] hover:text-[#1e4ed8] transition-colors">disclosure.</a>
+            <div className="py-3 px-4 text-[12px] md:text-sm font-semibold text-[#1e2a3b] leading-relaxed">
+              This is a subjective round-up and it is not exhaustive of all products on the market. We may receive referral fees and we are affiliated with some brands we mention, such as Pawfy. For more information, see <a href="#" onClick={openDisclosure} className="disclosure-popup underline cursor-pointer text-[#316DFF] hover:text-[#1e4ed8] transition-colors font-semibold">disclosure.</a>
             </div>
           </div>
         </div>

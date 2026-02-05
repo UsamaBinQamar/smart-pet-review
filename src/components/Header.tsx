@@ -13,7 +13,7 @@ const Header = () => {
       }}
     >
       <div className="container mx-auto px-5 md:px-6 h-24">
-        <div className="grid h-full grid-cols-[1fr_auto_1fr] items-center gap-4">
+        <div className="flex h-full items-center justify-between gap-4">
           <a
             href="/"
             className="inline-flex items-center no-underline outline-none focus-visible:ring-2 focus-visible:ring-sky-200/70 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent rounded-xl"
@@ -22,17 +22,13 @@ const Header = () => {
             <img
               src="https://www.smartpetreviews.com/assets/img/logo.svg"
               alt="Smart Pet Reviews"
-              className="h-[38px] w-auto"
+              className="h-12 w-auto md:h-[38px]"
             />
           </a>
 
-          <div className="text-center text-[13px] font-medium uppercase tracking-[1.2px] text-white/80 whitespace-nowrap">
-            SPONSORED ADVERTISING CONTENT
-          </div>
-
           <button
             type="button"
-            className="justify-self-end grid size-14 place-items-center rounded-xl bg-transparent text-white/90 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/55 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
+            className="grid size-14 shrink-0 place-items-center rounded-xl bg-transparent text-white/90 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/55 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
             aria-label="Open menu"
           >
             <img
