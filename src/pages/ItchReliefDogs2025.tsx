@@ -375,19 +375,19 @@ const ItchReliefDogs2025 = () => {
               <p className="text-sm md:text-base font-semibold uppercase tracking-wide text-[#666] text-center mb-2" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                 Top 5
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold text-black leading-tight mb-8 text-center" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+              <h2 className="text-2xl md:text-3xl font-bold text-black leading-tight mb-6 text-center" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                 Top 5 Dog Skin &amp; Coat Supplements of 2025
               </h2>
 
-              {/* Product Card: Pawfy */}
-              <div className="bg-white rounded-xl border-2 border-[#5FCE92] p-6 md:p-8 mb-8 relative pt-12 md:pt-14 shadow-sm">
-                {/* Badge */}
-                <div className="absolute left-6 -top-10">
-                  <img src="/imgi_11_badge.svg" alt="SmartPetReviews Badge" className="h-20 md:h-24 w-auto" />
-                </div>
+              {/* Smart Pet Reviews gold icon – above the box, centered */}
+              <div className="flex justify-center mb-4">
+                <img src="/imgi_11_badge.svg" alt="SmartPetReviews Badge" className="h-24 md:h-28 w-auto" />
+              </div>
 
+              {/* Product Card: Pawfy */}
+              <div className="bg-white rounded-xl border-2 border-[#5FCE92] p-6 md:p-8 mb-8 shadow-sm">
                 {/* Product Title */}
-                <div className="text-center mb-8">
+                <div className="text-center mb-6 md:mb-8">
                   <h3 className="text-3xl md:text-4xl font-bold text-black mb-2" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                     Skin &amp; Coat <span className="text-[#316DFF] text-base align-super">[ 1 ]</span>
                   </h3>
@@ -399,35 +399,35 @@ const ItchReliefDogs2025 = () => {
                   </p>
                 </div>
 
-                {/* Three Column Layout: Grade, Image, Ranking */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 items-center">
-                  {/* Overall Grade */}
-                  <div className="text-center bg-white rounded-xl border border-[#E5ECF4] shadow-sm p-6">
-                    <div className="text-6xl md:text-7xl font-bold text-black mb-2" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                      A+
-                    </div>
-                    <div className="text-sm font-semibold text-[#666] uppercase tracking-wide" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                      Overall Grade
-                    </div>
-                  </div>
-
-                  {/* Product Image */}
-                  <div className="flex justify-center bg-white rounded-xl border border-[#E5ECF4] shadow-sm p-6">
+                {/* Two Column Layout: Product Image (left), Rating Gauge (right) - larger */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mb-6 md:mb-8 items-center">
+                  {/* Left: Product Image - larger */}
+                  <div className="flex justify-center bg-white rounded-xl border border-[#E5ECF4] shadow-sm p-6 md:p-8">
                     <img
                       src="/Skin-1.webp"
                       alt="Pawfy Skin & Coat Supplement"
-                      className="h-48 md:h-56 w-auto object-contain"
+                      className="h-56 md:h-72 lg:h-80 w-auto object-contain"
                     />
                   </div>
 
-                  {/* Total Ranking */}
-                  <div className="text-center bg-white rounded-xl border border-[#E5ECF4] shadow-sm p-6">
-                    <div className="flex justify-center mb-2">
-                      <img src="/imgi_14_gauge-1.svg" alt="Rating Gauge 9.7/10" className="h-24 md:h-28 w-auto" />
+                  {/* Right: Rating Gauge - larger */}
+                  <div className="text-center bg-white rounded-xl border border-[#E5ECF4] shadow-sm p-6 md:p-8">
+                    <div className="flex justify-center mb-3">
+                      <img src="/imgi_14_gauge-1.svg" alt="Rating Gauge 9.7/10" className="h-32 md:h-40 lg:h-44 w-auto" />
                     </div>
-                    <div className="text-sm font-semibold text-[#666] uppercase tracking-wide" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                    <div className="text-sm md:text-base font-semibold text-[#666] uppercase tracking-wide" style={{ fontFamily: 'Satoshi, sans-serif' }}>
                       Total Ranking
                     </div>
+                  </div>
+                </div>
+
+                {/* Overall Grade row */}
+                <div className="text-center mb-8">
+                  <div className="text-5xl md:text-6xl font-bold text-black mb-1" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                    A+
+                  </div>
+                  <div className="text-sm font-semibold text-[#666] uppercase tracking-wide" style={{ fontFamily: 'Satoshi, sans-serif' }}>
+                    Overall Grade
                   </div>
                 </div>
 
